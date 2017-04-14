@@ -1,0 +1,10 @@
+---
+galaxy_info:
+  author: gfolga
+  description: Ansible role to install slacktee
+  license: GPLv2
+  min_ansible_version: 1.2
+  platforms:
+    - name: EL
+      versions:
+        - all

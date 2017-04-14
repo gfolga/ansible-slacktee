@@ -1,0 +1,16 @@
+---
+- name: slacktee script
+  get_url:
+    url: "https://raw.githubusercontent.com/course-hero/slacktee/master/slacktee.sh"
+    dest: "/usr/local/bin/slacktee.sh"
+    mode: 0775
+    owner: root
+    group: root
+
+- name: slecktee conf
+  template:
+    src: slacktee.conf.j2
+    dest: /etc/slacktee.conf
+    owner: root
+    group: root
+    mode: 0644
